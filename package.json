@@ -1,0 +1,33 @@
+{
+  "scripts": {
+    "build": "sass src/scss/index.scss:static/css/index.css && webpack",
+    "build-dev": "sass src/scss/index.scss:static/css/index.css && webpack --mode=development",
+    "watch": "sass src/scss/index.scss:static/css/index.css --watch",
+    "lint": "sass-lint src/scss/**/*.scss",
+    "dev": "flask run --host=0.0.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "materialize-css": "^1.0.0-rc.2",
+    "materialize-loader": "^3.0.1",
+    "nosleep.js": "^0.11.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "exports-loader": "^0.7.0",
+    "file-loader": "^6.0.0",
+    "prettier": "^2.0.4",
+    "sass": "^1.23.7",
+    "sass-lint": "^1.13.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "version": "0.0.1",
+  "name": "obs-control",
+  "license": "GPL-3.0-only"
+}
